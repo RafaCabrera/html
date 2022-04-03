@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JPG</h2>
+    <img src=".\multimedia\tree.jpg" alt="Árbol en la niebla" width="600" height="400"/>
+    <h2>SVG</h2>
+    <img src=".\multimedia\tree.svg" alt="Árbol en la niebla" width="600" height="400"/>
+    <h2>WEBp</h2>
+    <img src=".\multimedia\sakura-1920.webp" alt="Árbol en la niebla" width="600" height="400"/>
+
+    <h2>VIDEO ALTERNATIVE</h2>
+    <picture>
+        <source media="(min-width: 1500px)" srcset=".\multimedia\sakura-1920.webp"/>
+        <source media="(min-width: 1500px)"  srcset=".\multimedia\sakura-1920.jpg"/>
+        <img src=".\multimedia\sakura-500.jpg" alt="Arbolito enano"/>
+    </picture>
+    <h2>VIDEO</h2>
+    <video src=".\multimedia\Bike - 72566.mp4" controls loop></video>
+    <h2></h2>
+    <video height="840" width="1920" controls>
+        <source src=".\multimedia\Bike - 72566.mp4">
+        <img src=".\multimedia\cross-157492.svg" width="300" height="300" alt="Video no soportado" />
+    </video>
+    <H2>AUDIO</H2>
+    <audio src=".\multimedia\chill-abstract-intention-12099.mp3" controls autoplay></audio>
+</body>

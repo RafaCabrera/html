@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 OB</title>
+</head>
+<body>
+    <form id="Datos_persona" action="procesa_form_persona.php" method="post" style="border: 1px #000 solid; margin: 30px; padding: 10px; background-color: antiquewhite;">
+            <h2>Mis datos personales</h2>
+            <fieldset style="background-color: aliceblue;">
+                <legend>Nombre y apellidos</legend>
+                <div>
+                    <input type="text" name="name" id="name" pattern="[A-Za-z]+" required placeholder="Tu Nombre" autofocus >
+                    <p></p>
+                    <input type="text" name="apellido" id="apellido" pattern="[A-Za-z]+ [A-Za-z]+" required placeholder="Tus apellidos">
+                </div>
+            </fieldset>
+            <fieldset style="background-color: aliceblue;">
+                <legend>Datos de contacto</legend>
+                <div>
+                    <input type="email" name="email" id="email" required placeholder="Tu email">
+                    <input type="tel" name="telefono" id="phone"  placeholder="Tu teléfono (opcional)">
+                    <p></p>
+                    <textarea type="text" cols="120" name="direccion" id="dir" required placeholder="Tu dirección (opcional)"></textarea>
+                </div>
+            </fieldset>
+    </form>
+    <table border=1 style="border: 1px salmon solid; size-adjust: 1;" >
+        <tr>
+            <th>0,0</th>
+            <th>0,1</th>
+            <th>0,2</th>
+            <th>0,3</th>
+        </tr>
+            
+        <tr>
+            <td>1,0</td>    
+            <td rowspan="2">1,1 + 2.1</td>
+            <td>1,2</td>    
+            <td>1,3</td>
+        </tr>
+        <tr>
+            <td>2,0</td>    
+            <td>2,2</td>    
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,0</td>
+            <td colspan="2">3,1 + 3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+</body>
+</html>
