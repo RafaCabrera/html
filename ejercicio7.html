@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- En este ejercicio deberéis crear una página con un formulario de inicio de sesión, está pagina tendrá:
+
+- Una imagen de fondo.
+
+- Un formulario de inicio de sesión, contendrá mail y contraseña, un recuadro seleccionable de "Acepto términos y condiciones"y un botón de enviar.
+
+- Validación de campos.
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi taller de confianza</title>
+    <link rel="stylesheet" href="ejercicio7.css" type="text/css">
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--CONTENEDOR PRINCIPAL-->
+   <div class="main">
+        <div class="main__cont-form"> <!--CONTENEDOR FORMULARIO-->
+            <form action=""> <!--FORMULARIO CONTENEDOR-->
+                <h1>Zona usuarios registrados</h1>
+                <h2>Introduce tus datos de acceso</h2>
+
+                <div class="
+                main__cont-form__fields">
+                    <input id="user-email" type="email" autofocus autocomplete="email" placeholder="nombre@dominio.com" >
+                </div>
+                <div class="
+                main__cont-form__fields">
+                    <input id="user-pass" type="password" name="" id="" autocomplete="current-password"
+                    placeholder="contraseña">
+                </div>
+                <div id="condiciones">
+                    <input id="condiciones-input" type="checkbox" name="checkbox" id="">
+                    <label for="checkbox">Acepto condiciones de acceso</label>
+                    <a href="condiciones.html" id="condiciones-aref">(Condiciones)</a>
+                </div>
+                <div class="main__cont-boton-entrar">
+                    <button type="submit">Acceder</button>
+                </div>
+
+
+            </form>
+        </div>
+   </div>
+  
+</body>
+</html>
